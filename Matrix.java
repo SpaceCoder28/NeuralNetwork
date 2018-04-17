@@ -44,8 +44,8 @@ class Matrix {
   //transpose of a matrix 
   static Matrix transpose(Matrix t) {
     Matrix transp = new Matrix(t.columns, t.rows);
-    for(int i=0; i<t.rows; i++) {
-      for(int j=0; j<t.columns; j++) {
+    for(int i=0; i<transp.rows; i++) {
+      for(int j=0; j<transp.columns; j++) {
         transp.data[i][j] = t.data[j][i];
       }
     }
